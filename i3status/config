@@ -13,7 +13,6 @@ order += "battery 0"
 order += "cpu_usage 0"
 order += "load"
 order += "tztime local"
-
 battery 0 {
     format = "%status %percentage %remaining"
     format_down = ""
@@ -54,3 +53,4 @@ volume master {
     mixer = "Master"
     mixer_idx = 0
 }
+
