@@ -22,15 +22,14 @@ exec_always --no-startup-id exec i3-workspace-names-daemon
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
 bindsym Shift+Print exec --no-startup-id maim --select
 # lockscreen
-bindsym $mod+shift+x exec i3lock -i ~/.config/i3/i3lock.png
+bindsym $mod+shift+x exec i3lock -i ~/.config/i3/wallpapers/i3lock.png
 exec_always --no-startup-id xset s 180 120
-exec_always --no-startup-id xss-lock -- i3lock -i ~/.config/i3/i3lock.png
+exec_always --no-startup-id xss-lock -- i3lock -i ~/.config/i3/wallpapers/i3lock.png
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.jpg
-#exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,cz -variant ,qwerty"
+exec --no-startup-id ~/.config/i3/changer
+#exec --no-startup-id feh --bg-scale ~/.config/i3/day.jpg
 bindsym $mod+u exec "setxkbmap -layout us"
 bindsym $mod+c exec "setxkbmap -layout cz"
 # Use pactl to adjust volume in PulseAudio.
